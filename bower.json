@@ -1,0 +1,17 @@
+{
+	"name": "TypeScript-AMD-Boilerplate",
+	"description": "TypeScript AMD Boilerplate",
+	"version": "0.0.1",
+	"main": [],
+	"ignore": [
+		"test",
+		".*",
+		"gulpfile.js"
+	],
+	"dependencies": {
+		"requirejs": "",
+		"DefinitelyTyped": "",
+		"jquery": "",
+		"TypeScript.NET": "https://github.com/electricessence/TypeScript.NET.git#master"
+	}
+}
