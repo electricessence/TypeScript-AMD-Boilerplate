@@ -1,5 +1,5 @@
-///<reference path="../bower_components/DefinitelyTyped/jquery/jquery.d.ts"/>
-///<reference path="../bower_components/TypeScript.NET/build/System.d.ts" />
+///<reference path="../../bower_components/DefinitelyTyped/jquery/jquery.d.ts"/>
+///<reference path="../../bower_components/TypeScript.NET/build/System.d.ts" />
 ///<amd-dependency path="TypeScript.NET/System" />
 
 "use strict";
@@ -9,6 +9,7 @@ import ArrayUtility = System.Collections.ArrayUtility;
 
 // Constants...
 var MESSAGE:string = "Hello World";
+var registry:number[] = [];
 
 class HelloWorld
 {
@@ -19,6 +20,11 @@ class HelloWorld
 		$(document).ready(()=>{
 			$(selector).text(message);
 		});
+
+		registry.push(registry.length);
+
+		// Demonstrate usage of external libraries.
+		alert( ArrayUtility.max(registry) );
 	}
 }
 

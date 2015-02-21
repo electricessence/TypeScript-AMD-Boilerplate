@@ -1,12 +1,17 @@
 ///<reference path="../bower_components/DefinitelyTyped/requirejs/require.d.ts"/>
 
+// Using constants avoids WebStorm inspection flagging.
+var DIRECTORY_BOWER_COMPONENTS = "bower_components/";
+var DIRECTORY_BUILD = "build/";
+
 require.config(
 	{
-		baseUrl: "./",
+		baseUrl: "../",
 		paths: {
-			"jquery": "../bower_components/jquery/dist/jquery.min",
-			"TypeScript.NET/System": "../bower_components/TypeScript.NET/build/System",
-			"TypeScript.NET/System.Linq": "../bower_components/TypeScript.NET/build/System.Linq",
+			"jquery": DIRECTORY_BOWER_COMPONENTS+"jquery/dist/jquery.min",
+			"TypeScript.NET/System": DIRECTORY_BOWER_COMPONENTS+"TypeScript.NET/build/System",
+			"TypeScript.NET/System.Linq": DIRECTORY_BOWER_COMPONENTS+"TypeScript.NET/build/System.Linq",
+			"components":DIRECTORY_BUILD+"components"
 		},
 		shim: {
 			"TypeScript.NET/System": {

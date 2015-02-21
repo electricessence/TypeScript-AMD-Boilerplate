@@ -3,6 +3,13 @@
 
 "use strict";
 import $ = require("jquery");
-import HelloWorld = require("HelloWorld");
+import HelloWorld = require("components/HelloWorld");
 
-new HelloWorld("heading");
+// Before document ready...
+alert("Before ready.");
+
+$(document).ready(()=>{
+	$("#MainText").text("Main Text");
+	new HelloWorld("#ComponentText01");
+	new HelloWorld("#ComponentText02","Other Hello World");
+});

@@ -5,9 +5,14 @@
 	<title>TypeScript AMD Boilerplate</title>
 	<script type="text/javascript" src="../bower_components/requirejs/require.js"></script>
 	<script type="text/javascript" src="../build/require.config.js"></script>
-	<script type="text/javascript">requirejs(["build/main"]);</script>
+	<script type="text/javascript">requirejs([DIRECTORY_BUILD+"main"]);</script>
 </head>
 <body>
-	<div id="container"><h4 id="heading"></h4></div>
+	<div id="container">
+		<div id="StaticText">Static Text</div>
+		<div id="MainText"></div>
+		<div id="ComponentText01"></div>
+		<div id="ComponentText02"></div>
+	</div>
 </body>
 </html>
