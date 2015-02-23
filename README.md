@@ -3,7 +3,7 @@ This sample app shows the simplest working example of using require (Asynchronou
 
 ### Features
 - The main.ts demonstrates the use of a class and how you still need to wait for DOM elements to be loaded before access.
-- gulp.js (and nodejs) is used here to allow for a source and a deploy/build folder.  Not necessary for every project, but larger projects benefit from this cleaner structure.  Being able to ignore build files but keep source files is very helpful.
+- gulp.js (and nodejs) is used here to allow for a source and a deploy/build folder.  Not necessary for every project, but larger projects benefit from this cleaner structure.  Being able to ignore build files but keep source files is very helpful.  You could use grunt or any other task runner to trigger the typescript compiler, but gulp works very well and is easy to understand.
 - External module loading is demonstrated by the use of a shim.
 
 ### How to Proceed
